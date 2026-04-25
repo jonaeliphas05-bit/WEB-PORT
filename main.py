@@ -96,7 +96,7 @@ def main(page: ft.Page):
             ft.Text("This video explains how the Firestore database calculates 'Severity Levels' in real-time.", size=14, italic=True)
         ], scroll=ft.ScrollMode.AUTO),
         padding=40,
-        visible=False
+        visible=False#
     )
 
     # --- SECTION 4: GITHUB EVIDENCE ---
