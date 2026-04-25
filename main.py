@@ -76,6 +76,7 @@ def main(page: ft.Page):
         content=ft.Column([
             ft.Text("Confidence in Concepts", size=32, weight="bold", color=ft.colors.GREEN_800),
             ft.Markdown(
+                ft.Text("The MechTek database utilizes Firebase Firestore to store machine fault logs, ensuring that supervisors can track repairs in real-time without paper-based errors."),
                 "### Understanding Industrial Maintenance Costs\n"
                 "As the Documentation Lead, I defined the financial metrics for MechTek. "
                 "To calculate the total maintenance overhead, we utilize the following mathematical notation:\n\n"
