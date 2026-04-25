@@ -30,14 +30,17 @@ def main(page: ft.Page):
                 columns=[
                     ft.DataColumn(ft.Text("Week")),
                     ft.DataColumn(ft.Text("Documentation & Dev Tasks")),
-                ],
+                ],   
                 rows=[
                     ft.DataRow(cells=[ft.DataCell(ft.Text("1-2")), ft.DataCell(ft.Text("Defined Project Scope and Identification (Section 1.1)"))]),
                     ft.DataRow(cells=[ft.DataCell(ft.Text("3-4")), ft.DataCell(ft.Text("Mapped Industrial Maintenance Problem Statement"))]),
                     ft.DataRow(cells=[ft.DataCell(ft.Text("5-6")), ft.DataCell(ft.Text("Documented 8 Functional Requirements for Firebase"))]),
                     ft.DataRow(cells=[ft.DataCell(ft.Text("7-8")), ft.DataCell(ft.Text("Finalized System Overview and Target User Personas"))]),
                     ft.DataRow(cells=[ft.DataCell(ft.Text("9-10")), ft.DataCell(ft.Text("Created Firebase Firestore Data Model Schema"))]),
+                    # NEW ROW ADDED HERE:
+                    ft.DataRow(cells=[ft.DataCell(ft.Text("11-12")), ft.DataCell(ft.Text("Finalized technical blog and math notation logic"))]),
                 ],
+
             )
         ]),
         padding=40,
@@ -116,11 +119,11 @@ def main(page: ft.Page):
                     ])
                 )
             ),
+            ft.Image(src="github_evidence.png", border_radius=10, height=300),
             ft.Text("Verified Commit History (Latest 5)", weight="bold", size=20),
             ft.Image(src="assets/github_commits.png", border_radius=10, height=200, error_content=ft.Text("Paste Github Screenshot Here")),
-            ft.ListTile(leading=ft.Icon(ft.icons.CHECK_CIRCLE, color="green"), title=ft.Text("Commit 1: Drafted SRS Section 1 & 2")),
-            ft.ListTile(leading=ft.Icon(ft.icons.CHECK_CIRCLE, color="green"), title=ft.Text("Commit 2: Documented Firestore Data Model schema")),
-            ft.ListTile(leading=ft.Icon(ft.icons.CHECK_CIRCLE, color="green"), title=ft.Text("Commit 3: Finalized Use Case Diagrams")),
+            ft.ListTile(leading=ft.Icon(ft.icons.CHECK_CIRCLE, color="green"), title=ft.Text("Commit 1: Initial setup of Web Portfolio")),
+            ft.ListTile(leading=ft.Icon(ft.icons.CHECK_CIRCLE, color="green"), title=ft.Text("Commit 2: Update main.py")),
         ], scroll=ft.ScrollMode.AUTO),
         padding=40,
         visible=False
@@ -146,5 +149,4 @@ def main(page: ft.Page):
             github_view
         ], expand=True)
     )
-
-ft.app(target=main)
+ft.app(target=main, assets_dir="assets")
