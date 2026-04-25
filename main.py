@@ -96,23 +96,7 @@ def main(page: ft.Page):
             ft.Text("This video explains how the Firestore database calculates 'Severity Levels' in real-time.", size=14, italic=True)
         ], scroll=ft.ScrollMode.AUTO),
         padding=40,
-        visible=False#
-    )
-
-    # --- SECTION 4: GITHUB EVIDENCE ---
-    github_view = ft.Container(
-        content=ft.Column([
-            ft.Text("GitHub Evidence & Individual Impact", size=32, weight="bold", color=ft.colors.BLACK),
-            ft.Text("Documentation Lead | Student ID: 224063057", size=18, color=ft.colors.GREY_700),
-            ft.Divider(),
-            ft.Card(
-                color=ft.colors.BLUE_GREY_50,
-                content=ft.Container(
-                    padding=20,
-                    content=ft.Column([
-                        ft.Text("Individual Impact Summary", weight="bold", size=20),
-                        ft.Text(
-                            "I bridged the gap between raw engineering problems and technical execution by "
+        visible=False#S                      "I bridged the gap between raw engineering problems and technical execution by "
                             "drafting the System Requirements Specification (SRS). By defining the 'Fault Lifecycle' "
                             "(Reported -> Repairing -> Fixed), I provided the Lead Developers with a logical "
                             "framework that reduced coding errors and ensured 100% auditability of industrial machine repairs."
