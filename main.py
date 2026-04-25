@@ -20,7 +20,7 @@ def main(page: ft.Page):
     # --- SECTION 1: PROJECT TIMELINE ---
     timeline_view = ft.Container(
         content=ft.Column([
-            ft.Text("Project Timeline", size=32, weight="bold", color=ft.colors.BLUE_900),
+            ft.Text("Project Timeline", size=32, weight="bold", color=ft.color=ft.Colors.BLUE_900,)
             ft.Text("Weekly log of individual contributions to Group 15 (MechTek)", italic=True, size=16),
             ft.Divider(height=20),
             ft.DataTable(
@@ -131,7 +131,8 @@ def main(page: ft.Page):
     )
 
     # --- MAIN PAGE LAYOUT ---
-    page.navigation_bar = ft.NavigationBar(
+    page.navigation_bar = ft.Colors.SURFACE_VARIANT
+(
         destinations=[
             ft.NavigationDestination(icon=ft.icons.LIST_ALT, label="Timeline"),
             ft.NavigationDestination(icon=ft.icons.SCHOOL, label="MATLAB"),
